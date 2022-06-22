@@ -1,0 +1,61 @@
+*{
+    padding:0;
+    margin:0;
+    
+}
+.body{
+    background: url("../game_board.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    display:flex;
+    justify-content: center;
+    
+}
+#board{
+    margin-top: 10px;
+    width:170vmin;
+    height:95vmin;
+    border:10px solid yellowgreen;
+    border-style: ridge;
+    border-radius: 10px;
+    display:grid;
+    grid-template-rows: repeat(22,1fr);
+    grid-template-columns: repeat(36,1fr);
+}
+#score{
+    font-size: 35px;
+    margin-top: 10px;
+    width:30vmin;
+    height:10vmin;
+    border:10px solid red;
+    border-style: ridge;
+    border-radius: 10px;
+    margin-left: 20px;
+    
+}
+#high_score{
+    font-size: 35px;
+    margin-top: 100px;
+    width:23vmin;
+    height:10vmin;
+    border:10px solid red;
+    border-style: ridge;
+    border-radius: 10px;
+    margin-left: 20px;
+    
+}
+.head{
+    background-color: red;
+    border:.25vmin dashed yellow;
+    border-radius: 4px;
+}
+.snake{
+    background-color: lightgreen;
+    border:.25vmin solid white;
+    border-radius: 10px;
+}
+.food{
+    background-color: yellow;
+    border:.25vmin solid blue;
+    border-radius: 8px;
+}
